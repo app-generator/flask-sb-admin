@@ -1,57 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>
-        Flask Boilerplate Dashboard - {% block title %}{% endblock %} | AppSeed
-    </title>
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
-    <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
-    <meta name="author" content="CodedThemes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <link rel="apple-touch-icon"      sizes="180x180" href="/static/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"   href="/static/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"   href="/static/assets/img/favicon-16x16.png">
+    
+    <title>
+        Flask Dashboard SB Admin - {% block title %}{% endblock %} | AppSeed
+    </title>
 
-    <!-- Favicon icon -->
-    <link rel="icon" href="/static/assets/images/favicon.ico" type="image/x-icon">
-    <!-- fontawesome icon -->
-    <link rel="stylesheet" href="/static/assets/fonts/fontawesome/css/fontawesome-all.min.css">
-    <!-- animation css -->
-    <link rel="stylesheet" href="/static/assets/plugins/animation/css/animate.min.css">
-    <!-- vendor css -->
-    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link href="/static/assets/css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 
-    <!-- Specific CSS goes HERE -->
+    <!-- Specific Page CSS goes HERE  -->
     {% block stylesheets %}{% endblock stylesheets %}
 
 </head>
+<body class="sb-nav-fixed">
 
-<body>
-
-    <!-- [ Pre-loader ] start -->
-    <div class="loader-bg">
-        <div class="loader-track">
-            <div class="loader-fill"></div>
-        </div>
-    </div>    
-    
-    <!-- Top Bar -->
     {% include 'includes/navigation.html' %}
 
-    <!-- SideBar -->
-    {% include 'includes/sidebar.html' %}
+    <div id="layoutSidenav">
+        
+        {% include 'includes/sidebar.html' %}
 
-    <div class="pcoded-main-container">
-        <div class="pcoded-wrapper">
-
+        <div id="layoutSidenav_content">
+            
             {% block content %}{% endblock content %}
+            
+            {% include 'includes/footer.html' %}
 
         </div>
     </div>
@@ -60,6 +45,6 @@
 
     <!-- Specific Page JS goes HERE  -->
     {% block javascripts %}{% endblock javascripts %}
-
-</body>
+        
+    </body>
 </html>

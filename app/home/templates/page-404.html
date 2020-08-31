@@ -1,33 +1,30 @@
-{% extends "layouts/base-fullscreen.html" %}
+{% extends "layouts/base-error.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} Error 404 {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
+{% block content %}
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mt-4">
+                        <img class="mb-4 img-error" src="/static/assets/img/error-404-monochrome.svg" />
+                        <p class="lead">This requested URL was not found on this server.</p>
+                        <a href="/">
+                            <i class="fas fa-arrow-left mr-1"></i>
+                            Return to Dashboard
+                        </a>
                     </div>
-                    <h3 class="mb-4">Error 404</h3>
-
-                    <br />
-
-                    <span class="mb-0 text-muted">
-                        Page not found - <a href="/">Home</a> 
-                    </span>
-
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,33 +1,31 @@
-{% extends "layouts/base-fullscreen.html" %}
+{% extends "layouts/base-error.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} Error 403 {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
+{% block content %}
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mt-4">
+                        <h1 class="display-1">403</h1>
+                        <p class="lead">Unauthorized</p>
+                        <p>Access to this resource is denied.</p>
+                        <a href="/login.html">
+                            <i class="fas fa-arrow-left mr-1"></i>
+                            Please authenticate
+                        </a>
                     </div>
-                    <h3 class="mb-4">Error 403</h3>
-
-                    <br />
-
-                    <span class="mb-0 text-muted">
-                        Access denied - Please <a href={{ url_for('base_blueprint.login') }} >authenticate</a> 
-                    </span>
-
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
