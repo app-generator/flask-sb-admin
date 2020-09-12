@@ -30,11 +30,11 @@
 
                                 <div class="form-group">
                                     <label class="small mb-1" for="username">Username</label>
-                                    <input class="form-control" placeholder="Username" type="text" name="username" value="test">
+                                    {{ form.username(placeholder="Username", class="form-control") }}
                                 </div>
                                 <div class="form-group">
                                     <label class="small mb-1" for="inputPassword">Password</label>
-                                    <input class="form-control" placeholder="Password" type="password" name="password" value="pass">
+                                    {{ form.password(placeholder="Password", class="form-control", type="password") }}
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
