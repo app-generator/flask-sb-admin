@@ -1,16 +1,16 @@
 # [Flask Dashboard - Sb Admin](https://appseed.us/admin-dashboards/flask-dashboard-sb-admin)
 
-> Open-Source admin dashboard coded on top of SB Admin design with basic modules and deployment scripts - Features:
+SB Admin - A Bootstrap 4 admin template with minimal custom styling and an advanced development environment - a perfect starter template for building web apps, dashboards, and admin panels. SB Admin is a free, open source, MIT licensed Bootstrap admin template. This template uses the default Bootstrap 4 styles along with a variety of plugins to create a powerful framework for creating admin panels, web apps, or dashboard UI's for your next project.
+
+> App Features:
 
 - UI Kit: **SB Admin** (Lite Version) provided by **StartBootstrap**
-- SQLite, PostgreSQL, SQLAlchemy ORM
-- Alembic (DB schema migrations)
+- DBMS: SQLite, PostgreSQL (production) 
+- DB Tools: SQLAlchemy ORM, Alembic (schema migrations)
 - Modular design with **Blueprints**
-- Session-Based authentication (via **flask_login**)
-- Forms validation
+- Session-Based authentication (via **flask_login**), Forms validation
 - Deployment scripts: Docker, Gunicorn / Nginx, Heroku
-- **[MIT License](https://github.com/app-generator/license-mit)**
-- Support via **Github** and [Discord](https://discord.gg/fZC6hup).
+- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 > Links
 
