@@ -21,6 +21,7 @@ SB Admin is a free, open source, Bootstrap 4 based admin theme perfect for quick
 
 - [Flask SB Admin](https://appseed.us/admin-dashboards/flask-dashboard-sb-admin) - product page
 - [Flask SB Admin Demo](https://flask-dashboard-sb-admin.appseed.us/) - LIVE App
+- [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
 
