@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.3] 2021-05-25
+### Improvements
+
+- Bump UI: [SB Admin](https://github.com/StartBootstrap/startbootstrap-sb-admin) v7.0.0
+- UI Build Timestamp: 2021-05-25
+
 ## [1.0.2] 2021-05-16
 ### Dependencies Update
 
