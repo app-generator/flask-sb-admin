@@ -18,7 +18,7 @@
 > Links
 
 - [Flask SB Admin](https://appseed.us/admin-dashboards/flask-dashboard-sb-admin) - product page
-- [Flask SB Admin Demo](https://flask-dashboard-sb-admin.appseed.us/) - LIVE App
+- [Flask SB Admin](https://flask-sb-admin.appseed-srv1.com/) - LIVE Deployment
 - [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
