@@ -213,30 +213,6 @@ The generated file is saved in `static/assets/css` directory.
 
 The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Heroku](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
 
-<br />
-
-### [Docker](https://www.docker.com/) execution
----
-
-The application can be easily executed in a docker container. The steps:
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/flask-dashboard-sb-admin.git
-$ cd flask-dashboard-sb-admin
-```
-
-> Start the app in Docker
-
-```bash
-$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
-```
-
-Visit `http://localhost:5005` in your browser. The app should be up & running.
-
-<br />
-
 ### [Heroku](https://www.heroku.com/)
 ---
 
