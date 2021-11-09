@@ -1,0 +1,68 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Login {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card shadow-lg border-0 rounded-lg mt-5">
+                        <div class="card-header text-center">
+                            <h3 class="text-center font-weight-light my-4">
+                                Login
+                            </h3>
+                            <span class="text-center">
+                                {% if msg %}
+                                    {{ msg | safe }}
+                                {% else %}
+                                    Add your credentials
+                                {% endif %} 
+                            </span>                            
+                        </div>
+                        <div class="card-body">
+                            
+                            <form role="form" method="post" action="">
+
+                                {{ form.hidden_tag() }}  
+
+                                <div class="form-group">
+                                    <label class="small mb-1" for="username">Username</label>
+                                    {{ form.username(placeholder="Username", class="form-control") }}
+                                </div>
+                                <div class="form-group">
+                                    <label class="small mb-1" for="inputPassword">Password</label>
+                                    {{ form.password(placeholder="Password", class="form-control", type="password") }}
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" />
+                                        <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                    <button type="submit" name="login" class="btn btn-primary">Login</button>
+                                    <div class="small">
+                                        <a href="{{ url_for('authentication_blueprint.register') }}">Register</a></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="small">
+                                Flask SB Admin - Open-source Seed Project
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
