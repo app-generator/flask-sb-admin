@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta name="description" content="Sb Admin dashboard migrated to Python by AppSeed" />
+    <meta name="author" content="startbootstrap & AppSeed" />
+    
+    <title>
+        Flask SB Admin - {% block title %}{% endblock %} | AppSeed
+    </title>
+
+
+    <link href="/static/assets/css/styles.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Specific Page CSS goes HERE  -->
+    {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+<body class="bg-primary">
+
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+
+            {% block content %}{% endblock content %}
+        
+        </div>
+        <div id="layoutAuthentication_footer">
+            {% include 'includes/footer.html' %}
+        </div>
+    </div>
+
+    {% include 'includes/scripts.html' %}
+
+    <!-- Specific Page JS goes HERE  -->
+    {% block javascripts %}{% endblock javascripts %}
+
+</body>
+</html>
