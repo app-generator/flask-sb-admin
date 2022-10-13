@@ -26,35 +26,49 @@
                         </div>
                         <div class="card-body">
 
-                        <form role="form" method="post" action="">
+                            {% if success %}
+                            
+                                <div class="text-center">
+                                    
+                                    <a href="{{ url_for('authentication_blueprint.login') }}" class="btn btn-primary">Sign IN</a>
 
-                                {{ form.hidden_tag() }}   
+                                </div>
 
-                                <div class="form-row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="small mb-1" for="inputFirstName">Username</label>
-                                            {{ form.username(placeholder="Username", class="form-control") }}
+                            {% else %}
+
+                                <form role="form" method="post" action="">
+
+                                    {{ form.hidden_tag() }}   
+
+                                    <div class="form-row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="inputFirstName">Username</label>
+                                                {{ form.username(placeholder="Username", class="form-control") }}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group">
-                                    <label class="small mb-1" for="inputEmailAddress">Email</label>
-                                    {{ form.email(placeholder="Email", class="input form-control", type="email") }}
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label class="small mb-1" for="inputPassword">Password</label>
-                                    {{ form.password(placeholder="Password", class="form-control", type="password") }}
-                                </div>
-                                
-                                <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                    <button type="submit" name="register" class="btn btn-primary">Register</button>
-                                    <div class="small">
-                                        <a href="{{ url_for('authentication_blueprint.login') }}">Login</a></div>
-                                </div>
-                            </form>
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="inputEmailAddress">Email</label>
+                                        {{ form.email(placeholder="Email", class="input form-control", type="email") }}
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="inputPassword">Password</label>
+                                        {{ form.password(placeholder="Password", class="form-control", type="password") }}
+                                    </div>
+                                    
+                                    <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                        <button type="submit" name="register" class="btn btn-primary">Register</button>
+                                        <div class="small">
+                                            <a href="{{ url_for('authentication_blueprint.login') }}">Login</a></div>
+                                    </div>
+
+                                </form>                            
+
+                            {% endif %} 
+
                         </div>
                         <div class="card-footer text-center">
                             <div class="small">
